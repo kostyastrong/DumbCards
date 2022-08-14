@@ -1,0 +1,10 @@
+/home/maincpp/StudioProjects/current_activity/build/linux/x64/debug/bundle/current_activity
+/home/maincpp/StudioProjects/current_activity/build/linux/x64/debug/bundle/data/icudtl.dat
+/home/maincpp/StudioProjects/current_activity/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so
+/home/maincpp/StudioProjects/current_activity/build/linux/x64/debug/bundle/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+/home/maincpp/StudioProjects/current_activity/build/linux/x64/debug/bundle/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+/home/maincpp/StudioProjects/current_activity/build/linux/x64/debug/bundle/data/flutter_assets/version.json
+/home/maincpp/StudioProjects/current_activity/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.json
+/home/maincpp/StudioProjects/current_activity/build/linux/x64/debug/bundle/data/flutter_assets/FontManifest.json
+/home/maincpp/StudioProjects/current_activity/build/linux/x64/debug/bundle/data/flutter_assets/kernel_blob.bin
+/home/maincpp/StudioProjects/current_activity/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
