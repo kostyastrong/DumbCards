@@ -20,7 +20,6 @@ Card cardByWord(BuildContext context, String word) {
   double width = MediaQuery.of(context).size.width;
   double height = MediaQuery.of(context).size.height;
   return Card(
-      key: Key(word.toString()),  // do i need it?
       color: ColorOfWord(word),
       //Color((math.Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
       child: Container(

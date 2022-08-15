@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:current_activity/widget/main_page.dart';
 
-
-
 void main() {
   runApp(MyApp());
 }
