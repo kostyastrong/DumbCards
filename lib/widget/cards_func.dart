@@ -11,9 +11,6 @@ void removeTopActivity(List<String> ref) {
   ref.removeAt(0);
 }
 
-void updateSwipingDeck(SwipingCardDeck deck) {
-  deck.cardDeck =
-}
 void delayActivity(List<String> ref) {
   ref.add(ref.first);
   removeTopActivity(ref);

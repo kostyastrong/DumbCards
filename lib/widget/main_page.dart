@@ -27,7 +27,7 @@ class _MainPageState extends State<MainPage> {
         debugPrint("Swiped left!");
         delayActivity(curActivities);
         },
-      onRightSwipe: (Card card) {
+        onRightSwipe: (Card card) {
         debugPrint("Swiped right!");
         removeTopActivity(curActivities);
       },
