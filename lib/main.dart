@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:current_activity/widget/main_page.dart';
+import 'package:flutter_cool_card_swiper/pages/home_page.dart';
+import 'package:current_activity/widget/cool/DemoCool.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,12 +14,12 @@ class MyApp extends StatelessWidget {
     // Size size = MediaQuery.of(context).size;
     //  Orientation orientation = MediaQuery.of(context).orientation;
     return MaterialApp(
-        title: 'Cards',
+        title: 'Cards 1',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
         home: Scaffold(
-            body: Center(child: MainPage())
+            body: Center(child: DemoCool())
         ));
   }
 }
