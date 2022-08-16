@@ -7,8 +7,12 @@ import 'package:swipe/swipe.dart';
 Color ColorOfWord(String s) {
   return Color(s.hashCode % 16777215).withOpacity(1.0);
 }
+List<Color> makeGradient(int num, Color start, [Color finish = Colors.black]){
+  return [Colors.black];
+}
 
-List<String> words = List<String>.generate(7, (index) => index.toString());
+
+List<String> words = List<String>.generate(13, (index) => index.toString());
 List<Color> colors = List<Color>.generate(words.length, (index) => ColorOfWord(words[index]));
 
 class DemoCool extends StatelessWidget {
@@ -20,7 +24,7 @@ class DemoCool extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       body: Swipe(
-        onSwipeDown: debugPrint('down'),
+        onSwipeDown: () => debugPrint('down'),
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(20),
@@ -31,7 +35,11 @@ class DemoCool extends StatelessWidget {
                   height: Constants.cardHeight,
                   padding: const EdgeInsets.all(40),
                   decoration: BoxDecoration(
-                    color: colors[index],
+                    color: Colors.purpleAccent.shade700.withOpacity(1 - index * (1 / words.length)),
+                    border: Border.all(
+                      color: Colors.yellow.withOpacity(1 - index * (1 / words.length)),
+                      width: 3,
+                    ),
                     borderRadius: BorderRadius.circular(18),
                   ),
                   child: Align(
