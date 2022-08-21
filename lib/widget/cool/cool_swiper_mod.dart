@@ -4,8 +4,6 @@ import 'package:flutter_cool_card_swiper/models/swiper_card.dart';
 import 'package:flutter_cool_card_swiper/widgets/cool_swiper.dart';
 import 'package:flutter_cool_card_swiper/widgets/swiper_card_item.dart';
 import 'package:flutter_cool_card_swiper/widgets/swiper_card_wrapper.dart';
-import 'package:current_activity/widget/cool/providers.dart';
-import 'package:provider/provider.dart';
 import 'package:current_activity/widget/cool/CardActivity.dart';
 
 
@@ -66,9 +64,6 @@ class _CoolSwiperState extends State<CoolSwiper>
     ret.removeLast();
     ret.insert(0, last);
     int ind = stackChildren.length - 1;
-    // for (int i = 0; i < stackChildren.length; ++i) {
-    //   context.read<Opaciter>().setOpacity(1 - i * (1 / stackChildren.length));
-    // }  // TODO: i don't understand how provider can be applied here
     for (int i = 0; i < prev.length; ++i) {
       ret[ind] = CardActivity(
         key: ValueKey<int> (ind),

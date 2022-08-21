@@ -1,4 +1,3 @@
-import 'package:current_activity/widget/cool/providers.dart';
 import 'package:flutter/material.dart';
 import 'package:current_activity/widget/main_page.dart';
 import 'package:flutter_cool_card_swiper/pages/home_page.dart';
@@ -6,9 +5,7 @@ import 'package:current_activity/widget/cool/DemoCool.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(MultiProvider(providers: [
-    ChangeNotifierProvider(create: (_) => Opaciter()),
-  ], child: MyApp()));
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cool_card_swiper/constants.dart';
 
-
-
 class CardActivity extends StatefulWidget {
   CardActivity({Key? key, required double this.opacity}) : super(key: key);
   double opacity;
