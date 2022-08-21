@@ -30,7 +30,7 @@ class DemoCool extends StatelessWidget {
         body: SafeArea(
             child: Padding(
               padding: const EdgeInsets.all(20),
-              child: CoolSwiperMod(
+              child: Cool(
                 children: List.generate(
                     colors.length,
                     (index) => CardActivity(

@@ -1,25 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cool_card_swiper/constants.dart';
 import 'package:flutter_cool_card_swiper/models/swiper_card.dart';
+import 'package:flutter_cool_card_swiper/widgets/cool_swiper.dart';
 import 'package:flutter_cool_card_swiper/widgets/swiper_card_item.dart';
 import 'package:flutter_cool_card_swiper/widgets/swiper_card_wrapper.dart';
 import 'package:current_activity/widget/cool/providers.dart';
 import 'package:provider/provider.dart';
 import 'package:current_activity/widget/cool/CardActivity.dart';
 
-class CoolSwiperMod extends StatefulWidget {
-  List<Widget> children;  // I remove final
 
-  CoolSwiperMod({  // and const here
+class Cool extends CoolSwiper {
+  Cool({
     Key? key,
-    required this.children,
-  }) : super(key: key);
+    required List<Widget> children,
+}) : super(children: children);
 
   @override
-  State<CoolSwiperMod> createState() => _CoolSwiperState();
+  State<CoolSwiper> createState() => _CoolSwiperState();
 }
 
-class _CoolSwiperState extends State<CoolSwiperMod>
+class _CoolSwiperState extends State<CoolSwiper>
     with SingleTickerProviderStateMixin {
   late final AnimationController backgroundCardsAnimationController;
 
